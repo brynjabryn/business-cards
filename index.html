@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Business Card Experiment</title>
+</head>
+<body>
+<!-- Real World Example: http://gam.target.com/store-locator/sl/Mpls-Nicollet-Mall-Store/1375 -->
+<!-- Modal Doc: https://github.com/VodkaBears/Remodal#remodal -->
+<!-- Resource: https://developers.google.com/structured-data/ -->
+
+<button type="button" class="bcard-open">Click for Business Card</button>
+
+<span itemscope itemtype="http://schema.org/LocalBusiness">
+<h1 itemprop="name">Bryn Kelly Design</h1>
+<!-- Employee Name -->
+<h3 data-bcard="employee-name">Bryn Kelly, Software Engineer</h3>
+
+<!-- Address -->
+<p>Address:</p>
+<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">123 14th Ave</span><br/>
+<span itemprop="addressLocality">Minneapolis</span>, 
+<span itemprop="addressRegion">MN</span> 
+<span itemprop="postalCode">55413</span></p>
+
+<!-- Phone -->
+<p itemprop="telephone">612-501-0672</p>
+
+<!-- Email -->
+<p itemprop="email">bryn@awesome.com</p>
+
+<!-- Website -->
+<p itemprop="url">brynkellydesign.com</p>
+
+<!-- Description -->
+<span data-bcard="description">
+<p>Hand Crafted Design and Engineering.</p>
+<ul>
+	<li>Engineering for the Web</li>
+	<li>Print Design</li>
+	<li>Logos</li>
+</ul>
+</span>
+
+<!-- Logo -->
+<img class="hide" itemprop="image" data-bcard="logo" src="http://design.kelly-web.com/wp-content/themes/eclipse/images/designs/logos/50-fifty-logo.jpg" alt="logo"/></span>
+
+<!-- Background -->
+<meta name="bcard-background" content="http://design.kelly-web.com/wp-content/themes/eclipse/images/bg-ltblue-weave.jpg"/>
+
+<!-- Colors -->
+<meta name="bcard-primary-color" content="#798999"/>
+<meta name="bcard-secondary-color" content="#B9C9D9"/>
+
+<!-- Placement of logo -->
+<meta name="bcard-logo-placement" content="left"/>
+
+<!-- Placement of text -->
+<meta name="bcard-text-placement" content="center"/>
+
+<!-- Font styling choices -->
+<meta name="bcard-font" content="'Helvetica', Helvetica, serif"/>
+<meta name="bcard-font-size" content="small"/>
+
+<div class="overlay hide"></div>
+<div id="cardModal" class="hide">
+  <a id="cardClose">x</a>
+  <div id="cardContent"></div>
+</div>
+
+</body>
+</html>

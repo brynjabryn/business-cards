@@ -1,0 +1,40 @@
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.overlay {
+  background: #000; 
+  opacity: .75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#cardModal { 
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+#cardClose {
+  background: #FFF;
+  color: red;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#cardContent {
+  background: #FFF;
+  display: block;
+  opacity: 1.0;
+}
+
